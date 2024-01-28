@@ -2,12 +2,20 @@ var savedLanguage = localStorage.getItem('selectedLanguage') || 'en';
 
 // Function to set the direction based on the language
 function setDirection(lng) {
+  const button = document.getElementById("change-language").querySelector("button")
   if (lng === 'ar') {
     document.documentElement.dir = "rtl";
     document.documentElement.classList.add("rtl");
+    button.setAttribute("aria-pressed", "true")
+    button.classList.add("active", "focus");
+    // btn btn-lg btn-toggle active
   } else {
     document.documentElement.dir = "ltr";
     document.documentElement.classList.remove("rtl");
+    document.getElementById("change-language").setAttribute("aria-pressed", "true")
+    button.setAttribute("aria-pressed", "false")
+    button.classList.remove("active", "focus");
+
   }
 }
 

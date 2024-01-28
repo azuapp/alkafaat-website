@@ -56,8 +56,14 @@
         >
           <span class="navbar-toggler-icon"><i class="mdi mdi-menu"> </i></span>
         </button>
-        <button id="change-language">Change Language</button>
-
+        <div class="jumbotron" id="change-language">
+          <div class="df-switch">
+            <button type="button" class="btn btn-lg btn-toggle" data-toggle="button" aria-pressed="false" autocomplete="off">
+              <div class="inner-handle"></div>
+              <div class="handle"></div>
+            </button>
+          </div>
+        </div>
         <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
           <div
             class="d-lg-none d-flex justify-content-between px-4 py-3 align-items-center"
@@ -457,8 +463,8 @@
               />
             </div>
             <div class="col-sm-7">
-              <h3 class="font-weight-medium mt-5 mt-lg-0">Got A Problem</h3>
-              <h6 class="mb-5">
+              <h3 class="font-weight-medium mt-5 mt-lg-0" data-i18n="contact.title">Got A Problem</h3>
+              <h6 class="mb-5" data-i18n="contact.sub-title">
                 Various versions have evolved over the years, sometimes
               </h6>
               <form>

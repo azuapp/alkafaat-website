@@ -13,15 +13,10 @@ html {
 	}
 }
 
-.jumbotron {border-radius: 0;margin-bottom: 0;background: #f7f7f7}
-
-//.jumbotron.df-bg-primary {
-//	background-color: #083386;
-//}
+.language-switcher {border-radius: 0;margin-bottom: 0;background: transparent}
 
 .df-switch {
 	margin-top: 20px;
-	//padding: 2rem;
 	text-align: center;
 }
 .btn-toggle {
@@ -47,7 +42,6 @@ html {
 }
 .btn-toggle:before,
 .btn-toggle:after {
-	line-height: 1.5rem;
 	width: 4rem;
 	text-align: center;
 	font-weight: 600;

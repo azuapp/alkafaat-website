@@ -6,15 +6,14 @@ function setDirection(lng) {
   if (lng === 'ar') {
     document.documentElement.dir = "rtl";
     document.documentElement.classList.add("rtl");
-    button.setAttribute("aria-pressed", "true")
-    button.classList.add("active", "focus");
-    // btn btn-lg btn-toggle active
+    button.setAttribute("aria-pressed", "false")
+    button.classList.remove("active", "focus");
   } else {
     document.documentElement.dir = "ltr";
     document.documentElement.classList.remove("rtl");
     document.getElementById("change-language").setAttribute("aria-pressed", "true")
-    button.setAttribute("aria-pressed", "false")
-    button.classList.remove("active", "focus");
+    button.setAttribute("aria-pressed", "true")
+    button.classList.add("active", "focus");
 
   }
 }
